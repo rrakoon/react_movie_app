@@ -1,17 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"; //이 내용이 없으면 React는 file component를 읽어드릴수 있음.
+import ReactDOM from "react-dom";
+import App from "./App";
+import Rrakoon from "./Rrakoon";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDOM.render(<Rrakoon />, document.getElementById("root")); // 하나의 컴포넌트만 인지함.
+ReactDOM.render(<App />, document.getElementById("root")); // 하나의 컴포넌트만 렌더링됨.
+//<App /> => component => HTML반환하는 함수. => App.JS 에 function()선언한곳 실행.
